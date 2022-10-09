@@ -5,7 +5,7 @@ This repository helps with installing all necessary files to run OpenFOAM simula
 
 
 run these commands : 
-chmod u+x installopenfoam.sh 
-chmod u+x setupopenfoam.sh
+chmod +x installopenfoam.sh 
+chmod +x setupopenfoam.sh
 
 
