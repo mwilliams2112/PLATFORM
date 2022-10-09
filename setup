@@ -4,10 +4,23 @@ cd
 mkdir -p $FOAM_RUN
 cd $FOAM_RUN
 cp -r $FOAM_TUTORIALS .
-cd
 
+
+cd~/OpenFOAM/$USER-2.4.0
 sudo apt-get install git
 git clone https://github.com/NREL/SOWFA
-cd SOWFA
+mv SOWFA SOWFA-2.4.0 && cd SOWFA-2.4.0
+
 rm .bash_profile
+cp ~/PLATFORM/.bash_profile .
+cd
+. ~/OpenFOAM/$USER-2.4.0/SOWFA-2.4.0/.bash_profile; SOWFA-2.4.0
+
+./Allwclean
+./Allwmake
+
+cd
+echo "alias SOWFA='source $HOME/OpenFOAM/$USER-2.4.0/SOWFA-2.4.0/.bash_profile; SOWFA-2.4.0'" >> ~/.bashrc
+
+
 
