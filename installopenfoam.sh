@@ -7,3 +7,5 @@ sudo apt-get update
 sudo apt-get -y install openfoam240
 sudo apt-get -y install paraviewopenfoam410
 cd
+
+echo 'source /opt/openfoam240/etc/bashrc' >> .bashrc
