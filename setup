@@ -6,7 +6,7 @@ cd $FOAM_RUN
 cp -r $FOAM_TUTORIALS .
 
 
-cd~/OpenFOAM/$USER-2.4.0
+cd ~/OpenFOAM/$USER-2.4.0
 sudo apt-get install git
 git clone https://github.com/NREL/SOWFA
 mv SOWFA SOWFA-2.4.0 && cd SOWFA-2.4.0
